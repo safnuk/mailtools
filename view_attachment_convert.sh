@@ -124,7 +124,7 @@ if [[ $extension = "docx" ]] || [[ $extension = "doc" ]]; then
     exit
 fi
 if [[ $extension = "xls" ]] || [[ $extension = "xlsx" ]]; then
-    ~/Archive/bin/xls2txt.py $newfile | view -
+    xls2txt $newfile | view -
     exit
 fi
 
