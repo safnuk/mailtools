@@ -1,9 +1,0 @@
-#!/bin/bash
-
-home=/Users/safnu1b
-maildir=$home/.mailcache
-
-notmuch search --output=files folder:INBOX tag:deleted | xargs -I xxx mv xxx $maildir/Deleted\ Items/cur/
-
-find $maildir/Deleted\ Items/ -type f -mtime +30 -exec rm {} \;
-notmuch new
