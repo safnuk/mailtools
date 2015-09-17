@@ -6,6 +6,9 @@ install:
 	install xls2txt.py $(BINDIR)/xls2txt
 	install index-mail.sh $(BINDIR)/
 
+install-arch: install
+	install view_attachment_convert-arch.sh $(BINDIR)/view_attachment_convert.sh
+
 install-mac: install
 	install view_attachment_convert.sh view_attachment.sh offlineimap-pass.py $(BINDIR)/
 
