@@ -2,7 +2,7 @@ PREFIX = $(DESTDIR)/usr/local
 BINDIR = $(PREFIX)/bin
 
 install:
-	install -D mail-to-filter $(BINDIR)/mail-to-filter
+	install mail-to-filter $(BINDIR)/mail-to-filter
 	install xls2txt.py $(BINDIR)/xls2txt
 	install index-mail.sh $(BINDIR)/
 
