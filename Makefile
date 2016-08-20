@@ -4,6 +4,7 @@ BINDIR = $(PREFIX)/bin
 install:
 	install mail-to-filter $(BINDIR)/mail-to-filter
 	install xls2txt.py $(BINDIR)/xls2txt
+	install mutt-search.sh $(BINDIR)/mutt-search
 	install index-mail.sh $(BINDIR)/
 	install monitor-offlineimap.sh $(BINDIR)/monitor-offlineimap
 
@@ -16,4 +17,4 @@ install-mac: install
 
 uninstall:
 	-rm -f $(BINDIR)/{mail-to-filter,xls2txt,view_attachment_convert.sh,view_attachment.sh}
-	-rm -f $(BINDIR)/{offlineimap-pass.py,index-mail.sh,monitor-offlineimap,networkstatus}
+	-rm -f $(BINDIR)/{offlineimap-pass.py,index-mail.sh,monitor-offlineimap,networkstatus,mutt-search}
