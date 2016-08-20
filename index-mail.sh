@@ -1,3 +1,3 @@
 #!/bin/bash
 notmuch new
-mu index --maildir ~/.mailcache
+mu index --maildir ~/mail
